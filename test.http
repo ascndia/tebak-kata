@@ -1,7 +1,6 @@
 ### TEST BACKEND
 POST http://localhost:3000/api
 content-type: application/json
-Authorization: Bearer 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
 
 {
     "question": ["i like to watch", "TV"],

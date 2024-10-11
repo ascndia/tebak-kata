@@ -9,8 +9,8 @@ export const hfGetSimilarity = async (question: Question, answer: string) => {
     const response = await axios.post(
       MODEL_END_POINT!,
       {
-        source_sentence: toString(question),
-        sentences: [toString([question[0], answer])],
+        source_sentence: toString(question).toLowerCase(),
+        sentences: [toString([question[0], answer]).toLowerCase()],
       },
       {
         headers: {
